@@ -14,8 +14,8 @@ const Star: React.FC<StarProps> = ({ filled, onClick }) => {
 };
 
 interface iStarRatingProps {
-  value: number; // Rating value out of 5
-  onChange: (newValue: number) => void; // Function to handle rating change
+  value: number; 
+  onChange: (newValue: number) => void; 
 }
 
 const StarRating: React.FC<iStarRatingProps> = ({ value, onChange }) => {

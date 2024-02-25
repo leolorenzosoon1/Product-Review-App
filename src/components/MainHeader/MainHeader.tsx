@@ -1,21 +1,18 @@
-import React, { useContext } from 'react'
-import {SearchContext, FilterContext} from '../../'
+import { useContext } from 'react'
+import { SearchContext } from '../../'
 import { Link } from 'react-router-dom'
-import {SearchBar} from '../'
+import { SearchBar } from '../'
 import styles from './MainHeader.module.css';
 
-const MainHeader = (props:any) => {
-    console.log('Main header props', props)
-
+const MainHeader = (props: any) => {
     const { search, setSearch } = useContext(SearchContext);
-    const { filter:categoryFilter, setFilter } = useContext(FilterContext);
 
-return(<div className={styles.headerContainer}>
-    <Link to={{ pathname: '/'}} className={styles.headerLink}>
-    Home Page
-    </Link>
-    <SearchBar search={search} setSearch={setSearch} /> 
-    {/* {!!categoryFilter.length && 
+    return (<div className={styles.headerContainer}>
+        <Link to={{ pathname: '/' }} className={styles.headerLink}>
+            Home Page
+        </Link>
+        <SearchBar search={search} setSearch={setSearch} />
+        {/* {!!categoryFilter.length && 
     <div className={styles.activeFiltersContainer}>
         Active Filters:
         {categoryFilter.map((activeFilter:string) => 
@@ -33,7 +30,7 @@ return(<div className={styles.headerContainer}>
 
     </div>
     } */}
-    
+
     </div>)
 
 }

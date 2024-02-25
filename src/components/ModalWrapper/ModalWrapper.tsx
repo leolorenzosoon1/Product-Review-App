@@ -1,11 +1,11 @@
-import React, { ReactNode, useState } from 'react'; 
+import React, { ReactNode, useState } from 'react';
 import styles from './ModalWrapper.module.css'
 interface ModalWrapperProps {
-    children: ReactNode; 
+    children: ReactNode;
 }
 
-const ModalWrapper: React.FC<ModalWrapperProps> = ({ children }) => { 
-    const [open,setOpen] = useState(true)
+const ModalWrapper: React.FC<ModalWrapperProps> = ({ children }) => {
+    const [open] = useState(true)
 
     return (
         <div className={styles.container}>

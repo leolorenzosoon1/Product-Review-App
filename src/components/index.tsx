@@ -14,9 +14,6 @@ import ImageComponent from './ImageComponent/ImageComponent'
 import StarRating from './Star/StarRating'
 
 
-
-
-
 export { GridProduct, 
     ViewProduct, Test, LandingPage, MainHeader, EditReview, ModalWrapper, SearchBar, FilterRadio, ImageComponent,
     NewReview, ReviewForm, StarRating
