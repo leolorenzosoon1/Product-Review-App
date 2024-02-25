@@ -1,0 +1,17 @@
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.leftChild {
+  width: 20%; 
+}
+
+.rightChild {
+  width: 78%; 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}

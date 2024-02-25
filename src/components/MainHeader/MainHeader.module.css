@@ -1,0 +1,35 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; 
+    color: white; 
+  }
+  
+  .headerLink {
+    color: white; 
+    text-decoration: none; 
+  }
+  
+  .filterIcon {
+    margin-left: 10px; 
+  }
+  
+  .activeFiltersContainer {
+    margin-top: 10px;  
+  }
+  
+  .activeFilterButton {
+    margin-right: 5px; 
+    padding: 5px 10px; 
+    background-color: #555; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+  }
+  
+  .activeFilterButton:hover {
+    background-color: #777; 
+  }
+  
