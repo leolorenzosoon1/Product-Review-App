@@ -12,11 +12,11 @@ const GridProduct:React.FC<iProductProps> = ({product})=> {
     const {name, image, category, price, currency, details, dateCreated} = product
     console.log('product',product)
 return(
-<Link to={{ pathname: '/viewProduct'}} state={{ product}} >
+<Link to={{ pathname: '/viewProduct'}} state={{ product}} className={styles.link}>
 <div className={styles.item} onClick={(e) => {console.log('Clicked product', product)}}>
         <ImageComponent src={image} width={"200"} height={"150"}/>
-   <p>name: {name}</p>
-   <p>price: {`${price} ${currency}`}</p>
+   <p>{name}</p>
+   <p>{`${price} ${currency}`}</p>
 
 
    
