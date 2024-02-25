@@ -3,11 +3,19 @@
 ## Installation
 
 To install dependencies, run the following command:
+```
+npm i
+```
 
 
 ## Usage
 
 To start the project, run:
+```
+npm run start
+```
+
+
 
 
 ## Project Requirements
